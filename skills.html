@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--    Android Menu Bar Colour-->
+    <meta name="theme-color" content="#000000">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A CV Site highlighting personal skills and qualities">
+    <link rel="manifest" href="data/json/manifest.json">
+    <!--    Favicon Data-->
+    <link rel="apple-touch-icon" sizes="180x180" href="data/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="data/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="data/img/favicon/favicon-16x16.png">
+    <!--    <link rel="manifest" href="data/img/favicon/site.webmanifest">-->
+    <link rel="mask-icon" href="data/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="data/img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="msapplication-config" content="/data/img/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!--    -->
+    <title>Skills</title>
+    <link rel="stylesheet" type="text/css" href="styles/main2.css">
+</head>
+<body>
+<header>
+    <!--    Main Heading Bar-->
+    <div id="MainHeadingBar">
+        <div id="MainHeadingImg"></div>
+        <h1 id="MainHeadingText">Skills Page</h1>
+    </div>
+</header>
+
+<!--Main navigation bar-->
+<nav>
+    <ul id="MainNav">
+        <li id="Index" class="NavBox"><a href="index.html">Home</a> </li>
+<!--        <li id="JSPage" class="NavBox"><a href="js_page.html">Coffee</a></li>-->
+        <li id="Qualifications" class="NavBox"><a href="qualifications.html">Qualifications</a> </li>
+<!--        <li id="CSSDes1" class="NavBox"><a href="css_des1.html">CSS 1</a> </li>-->
+<!--        <li id="CSSDes2" class="NavBox"><a href="css_des2.html">CSS 2</a> </li>-->
+        <li id="skills" class="NavBox"><a href="skills.html">Skills</a> </li>
+    </ul>
+</nav>
+
+<!--Banner Image-->
+<div id="bannerImage"></div>
+
+
+<main>
+    <div id="SkillsPageBoxes">
+        <div id="AboutCSSJS">
+            <h2 class="mainPageHeadings">About CSS/ECMAScript</h2>
+            <div id="AboutCSSJSImg"></div>
+            <h3>CSS Overview</h3>
+            <p>CSS (Cascading Style Sheets) is a language designed for describing the presentation of a document written in a language such as HTML.
+                One of the primary uses of CSS is to split the presentation and the content of a site into two distinct areas. This provides a greater degree of flexibility when it comes to designing and managing the look of a site.
+                Multiple web pages can be configured to use the same CSS sheet, unifying designs across multiple pages from one centralised description. This makes management of multiple pages much easier when it comes to the design.
+                CSS also facilitates having separate design styles for different content delivery methods, such as braille devices and smartphones.
+            </p>
+            <h3>ECMAScript Overview</h3>
+            <p>ECMAScript is the name given to a programming language that is often used in web browsers and mobile devices to render and manage web content. ECMAScript enables interactive webpages and Progressive Web Applications (PWAs) to have more advanced functionality, such as interactive elements.</p>
+        </div>
+        <div id="DesignPagesContainer">
+            <h2 id="DesignPagesHeading" class="mainPageHeadings">Design Pages</h2>
+            <div id="CSSDesignBoxOne" class="DesignPageBox">
+                <div id="CSSDesignImgOne" class="DesignBoxImg"></div>
+                <h3 id="CSSDesignOneHeader" class="DesignBoxHeader">CSS Design One</h3>
+                <p id="CSSDesignOneDescription" class="DesignDescriptionParagraph">A page that showcases the concept that HTML can be displayed in different ways depending on the CSS that is applied to it. This is design one.</p>
+                <div id="CSSDesignOneLinkBox" class="DesignPageLinkBox">
+                    <a href="css_des1.html" class="DesignPageLink">Click Here for design one</a>
+                </div>
+            </div>
+            <div id="CSSDesignBoxTwo" class="DesignPageBox">
+                <div id="CSSDesignImgTwo" class="DesignBoxImg"></div>
+                <h3 id="CSSDesignTwoHeader" class="DesignBoxHeader">CSS Design Two</h3>
+                <p id="CSSDesignTwoDescription" class="DesignDescriptionParagraph">This page has identical HTML to the first design page but has a different means of styling. This highlights the concept that styling of a page is not dependant on the HTML.</p>
+                <div id="CSSDesignTwoLinkBox" class="DesignPageLinkBox">
+                    <a href="css_des2.html" class="DesignPageLink">Click Here for design two</a>
+                </div>
+            </div>
+            <div id="JSDesignBox" class="DesignPageBox">
+                <div id="JSDesignImg" class="DesignBoxImg"></div>
+                <h3 id="JSDesignHeader" class="DesignBoxHeader">JS Page</h3>
+                <p id="JSDesignDescription" class="DesignDescriptionParagraph">A page that highlights how JavaScript can be used to create interactive webpages. This page is designed to take orders for coffee and display the results to the user in an intuitive and user-friendly manner.</p>
+                <div id="JSLinkBox" class="DesignPageLinkBox">
+                    <a href="js_page.html" class="DesignPageLink">Click here for Coffee Page</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div id="HomepageFooter">
+        <p>Matthew Boyce, b018567j@student.staffs.ac.uk, All images obtained from www.unsplash.com - License available at https://unsplash.com/license</p>
+    </div>
+</footer>
+<script>
+    //check whether browser support service workers
+    if ('serviceWorker' in navigator) {
+        //wait until page loaded to avoid delaying rendering
+        window.addEventListener('load', function() {
+            //register service worker
+            navigator.serviceWorker.register('serviceworker.js').then(
+                function(registration) {
+                    console.log('Service worker registration successful',
+                        registration);
+                },
+                function(err) {
+                    console.log('Service worker registration failed', err);
+                });
+        });
+    }
+</script>
+</body>
+</html>

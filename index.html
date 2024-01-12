@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A CV Site highlighting personal skills and qualities">
+<!--    Android Menu Bar Colour-->
+    <meta name="theme-color" content="#000000">
+<!--          -->
+    <!--    Favicon Data-->
+    <link rel="apple-touch-icon" sizes="180x180" href="data/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="data/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="data/img/favicon/favicon-16x16.png">
+<!--    -->
+    <link rel="manifest" href="data/json/manifest.json">
+    <link rel="mask-icon" href="data/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="data/img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="msapplication-config" content="/data/img/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!--    -->
+    <title>About Me</title>
+    <link rel="stylesheet" type="text/css" href="styles/main2.css">
+</head>
+<body>
+<header>
+    <div id="MainHeadingBar">
+        <div id="MainHeadingImg"></div>
+        <h1 id="MainHeadingText">About Me</h1>
+    </div>
+</header>
+
+<!--Main navigation bar-->
+<nav>
+<ul id="MainNav">
+    <li id="Index" class="NavBox"><a href="index.html">Home</a> </li>
+    <li id="Qualifications" class="NavBox"><a href="qualifications.html">Qualifications</a> </li>
+    <li id="skills" class="NavBox"><a href="skills.html">Skills </a> </li>
+</ul>
+</nav>
+
+<!--Banner Image-->
+<div id="bannerImage"></div>
+
+<!--Homepage content boxes-->
+<main>
+    <div id="HomepageBoxes">
+        <div id="AboutMe" class="MainBox">
+            <h2 class="mainPageHeadings">About Me</h2>
+            <div id="AboutMeImg" class="MainBoxImg"></div>
+            <h3>Personal Statement</h3>
+            <p id="AboutMeText" class="MainText">I am a twenty year-old student at Staffordshire University. I live on
+                the South Coast of England in the county of Sussex.<br><br> I am a hardworking and polite individual who
+                takes pride in the work that I am set and have a keen interest and passion for technologically and
+                mechanically related subjects, such as IT, Automotive Engineering and Cybersecurity.<br><br>
+                As well as these, my interests also lie in lower-level areas, such as electrical engineering and
+                mechanics. I have a flair for problem solving and can work well in a team, or individually.</p>
+            <h3>Notable Characteristics</h3>
+            <ol>
+                <li>Attentive</li>
+                <li>Hard Working</li>
+                <li>Punctual</li>
+                <li>Good team worker</li>
+            </ol>
+        </div>
+        <div id="Interests" class="MainBox">
+            <h2 class="mainPageHeadings">Interests</h2>
+            <div id="InterestsImg" class="MainBoxImg"></div>
+            <h3>Interests and Hobbies</h3>
+            <p id="HobbiesAndSkills" class="MainText">My interests outside of study lie in electronics and mechanics.
+                I regularly build and maintain computer systems that have often been donated to me as broken.<br><br>
+                I have a keen interest in automotive engineering and have spent a few months volunteering at a local
+                garage, during my summer breaks.<br><br> I enjoy walking, cycling and driving in my free time,
+                as well as photography, writing and aviation. In the future, I aim to begin training for a
+                Private Pilot’s License as well.</p>
+        </div>
+        <div id="WEQ" class="MainBox">
+             <h2 class="mainPageHeadings">Qualities</h2>
+            <div id="WEQImg" class="MainBoxImg"></div>
+            <div id="QualificationsAndWEContent">
+                <h3>Career Overview</h3>
+                <p class="CareerOverviewText">
+                    I have undertaken a variety of roles over the course of my career. These include:
+                </p>
+                <ul>
+                    <li>Manual Jobs</li>
+                    <li>Low-skilled jobs</li>
+                    <li>Apprenticeships</li>
+                    <li>Technical Jobs</li>
+                </ul>
+                <p class="CareerOverviewText">I have completed secondary and college level qualifications and am
+                    currently in the process of studying for an undergraduate degree in Computer Science.<br><br>
+                    My qualifications have been gathered from a number of different sources, including secondary and
+                    higher level education. These include 13 GCSE's and 3 A-levels.<br><br>As well as these, I have
+                    collected more practical-based qualifications from my time as an apprentice IT technician.<br><br>
+                    My first experience in the world of work was a work experience placement that I undertook
+                    during my time at 6th form. I was stationed in a local garage and I found the experience highly
+                    enjoyable.</p>
+            </div>
+        </div>
+    </div>
+
+
+</main>
+
+<footer>
+    <div id="HomepageFooter">
+        <p>Matthew Boyce, b018567j@student.staffs.ac.uk, All images obtained from www.unsplash.com - License available at https://unsplash.com/license</p>
+    </div>
+</footer>
+<script>
+    //check whether browser support service workers
+    if ('serviceWorker' in navigator) {
+        //wait until page loaded to avoid delaying rendering
+        window.addEventListener('load', function() {
+            //register service worker
+            navigator.serviceWorker.register('serviceworker.js').then(
+                function(registration) {
+                    console.log('Service worker registration successful',
+                        registration);
+                },
+                function(err) {
+                    console.log('Service worker registration failed', err);
+                });
+        });
+    }
+</script>
+</body>
+</html>

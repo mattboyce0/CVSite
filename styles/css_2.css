@@ -1,0 +1,278 @@
+/*Global variable declaration*/
+:root{
+    --tint-colour: #bebebe;
+}
+
+@media screen
+and (max-device-width: 620px)
+and (min-device-width: 0px)
+{
+    *{
+        background-color: black;
+        color: white;
+        font-family: Calibri, sans-serif;
+    }
+    #MainHeadingText{
+        text-align: center;
+    }
+
+    #MainHeadingImg{
+        grid-column: 2;
+        height: 500px;
+        background-image: url("../data/img/resized/desktop/codeimg.webp");
+        background-color: black;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    /*Navigation Bar*/
+    #MainNav{
+        list-style: none;
+        display: grid;
+        grid-template-columns:  repeat(3, 1fr);
+        padding: 0;
+        margin: 0;
+        background-color: var(--tint-colour);
+        text-align: center;
+    }
+
+    .NavBox{
+        background-color: var(--tint-colour);
+        padding: 30px;
+        list-style: none;
+    }
+
+    .NavBox a{
+        background-color: var(--tint-colour);
+        color: black;
+    }
+
+    .NavBox:hover{
+        background-color: darkgray;
+    }
+
+    .MainPageBoxHeadings{
+        background-color: darkgray;
+        text-align: center;
+        padding: 2%;
+        color: black;
+        border: solid white 5px;
+    }
+
+    .SectionBoxText{
+        padding: 3%;
+        background-color: grey;
+        color: black;
+        border: solid white 5px;
+    }
+
+    .MainPageBoxImages{
+        border: solid white 3px;
+        grid-column: 1;
+        grid-row: 1;
+        background-color: black;
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 3%;
+    }
+
+    #UpperSectionImg{
+        background-image: url("../data/img/resized/desktop/pentestimg3.webp");
+    }
+
+    #MiddleSectionImg{
+        background-image: url("../data/img/resized/desktop/pentestimg2.webp");
+    }
+
+    #LowerSectionImg{
+        background-image: url("../data/img/resized/desktop/pentestimg1.webp");
+    }
+
+
+}
+
+/*Tablet Styling*/
+@media screen
+and (max-device-width: 1024px)
+and (min-device-width: 621px)
+{
+
+}
+
+/*Desktop Styling*/
+@media screen
+and (min-device-width: 1025px){
+
+    *{
+        background-color: black;
+        color: white;
+        font-family: Calibri, sans-serif;
+
+    }
+    /*Main Heading Bar*/
+    #MainHeadingBar{
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: repeat(1, 200px);
+    }
+
+    #MainHeadingText{
+        margin-top: 16%;
+        grid-column: 1;
+        grid-row: 1;
+        text-align: center;
+
+    }
+
+    #MainHeadingImg{
+        grid-column: 2;
+        height: 200px;
+        background-image: url("../data/img/resized/desktop/codeimg.webp");
+        background-color: black;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    /*Navigation Bar*/
+    #MainNav{
+        list-style: none;
+        display: grid;
+        grid-template-columns:  repeat(3, 1fr);
+        padding: 0;
+        margin: 0;
+        background-color: var(--tint-colour);
+        text-align: center;
+    }
+
+    .NavBox{
+        background-color: var(--tint-colour);
+        padding:10px;
+        list-style: none;
+        margin:0;
+    }
+
+    .NavBox a{
+        background-color: var(--tint-colour);
+        color: black;
+    }
+
+    .NavBox:hover{
+        background-color: darkgray;
+    }
+
+    /*Main Page Sections Grid*/
+    #MainSection{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, 33%);
+        grid-row-gap: 3%;
+        grid-column-gap: 3%;
+
+
+    }
+
+    #UpperSection{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #MiddleSection{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #LowerSection{
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .MainPageSectionBoxes{
+        display: grid;
+        grid-template-columns: 33% 66%;
+        border: solid 3px white;
+        background-color: grey;
+        margin: 4%;
+        padding: 1%
+    }
+
+    .MainPageBoxHeadings{
+        grid-column: 2;
+        grid-row: 1;
+        text-align: center;
+        background-color: black;
+        padding: 20px;
+        border: solid white 3px;
+    }
+
+    .MainPageBoxImages{
+        border: solid white 3px;
+        grid-column: 1;
+        grid-row: 1;
+        background-color: black;
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 2%;
+
+    }
+
+    .SectionBoxText{
+        grid-column: 2;
+        grid-row: 2;
+        padding: 3%;
+        margin: 0;
+        border: solid white 3px;
+    }
+
+    #UpperSectionImg{
+        background-image: url("../data/img/resized/desktop/pentestimg3.webp");
+    }
+
+    #MiddleSectionImg{
+        margin-left: 2%;
+        background-image: url("../data/img/resized/desktop/pentestimg2.webp");
+    }
+
+    #LowerSectionImg{
+        background-image: url("../data/img/resized/desktop/pentestimg1.webp");
+        height: 350px;
+    }
+
+    #MiddleSectionImg{
+        grid-column: 2;
+    }
+
+    #MiddleSectionText{
+        grid-column: 1;
+    }
+
+    #MiddleSection h1{
+        grid-column: 1;
+        margin: 10px;
+    }
+
+    #PageFooter * {
+        background: black;
+        padding: 0;
+        margin: 0;
+        color: white;
+    }
+
+    #PageFooter p {
+        margin-top: 100px;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        text-align: center;
+    }
+}

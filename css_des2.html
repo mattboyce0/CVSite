@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A CV Site highlighting personal skills and qualities">
+    <link rel="manifest" href="data/json/manifest.json">
+    <!--    Android Menu Bar Colour-->
+    <meta name="theme-color" content="#000000">
+    <!--          -->
+    <!--    Favicon Data-->
+    <link rel="apple-touch-icon" sizes="180x180" href="data/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="data/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="data/img/favicon/favicon-16x16.png">
+    <!--    -->
+    <link rel="manifest" href="data/json/manifest.json">
+    <link rel="mask-icon" href="data/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="data/img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="msapplication-config" content="/data/img/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!--    -->
+    <title>An Introduction to Penetration Testing</title>
+    <link rel="stylesheet" type="text/css" href="styles/css_2_2.css">
+</head>
+<body>
+<header>
+    <div id="MainHeadingBar">
+        <div id="MainHeadingImg"></div>
+        <h1 id="MainHeadingText">An Introduction to Penetration Testing</h1>
+    </div>
+</header>
+<nav>
+    <ul id="MainNav">
+        <li id="Index" class="NavBox"><a href="index.html">Home</a> </li>
+<!--        <li id="JSPage" class="NavBox"><a href="js_page.html">Coffee</a></li>-->
+        <li id="Qualifications" class="NavBox"><a href="qualifications.html">Qualifications</a> </li>
+<!--        <li id="CSSDes1" class="NavBox"><a href="css_des1.html">CSS 1</a> </li>-->
+<!--        <li id="CSSDes2" class="NavBox"><a href="css_des2.html">CSS 2</a> </li>-->
+        <li id="skills" class="NavBox"><a href="skills.html">Skills</a></li>
+    </ul>
+</nav>
+
+<main>
+    <div id="GridBox">
+        <div id="LeftBanner" class="MainPageSection">
+            <div id="LeftBannerImage" class="BannerImageBox"></div>
+        </div>
+
+        <div id="MainSection" class="MainPageSection">
+            <!--        Upper Box        -->
+            <div id="UpperSection" class="MainPageSectionBoxes">
+                <h1 class="MainPageBoxHeadings">What is Penetration Testing?</h1>
+                <div id="UpperSectionImg" class="MainPageBoxImages"></div>
+                <p id="UpperSectionText" class="SectionBoxText">Penetration testing is the professional term for “hacking” into systems for the purposes of locating and fixing security flaws and system weaknesses. Penetration testing is colloquially known as “white hat hacking”, and is often undertaken by security professionals that have been hired by a company either permanently or on a contract basis to test the security of a particular system.
+                    The idea behind Penetration testing is to simulate an actual hacking attempt (Black hat hacking) and locate any security flaws before they are exploited by a malicious user.
+                </p>
+
+            </div>
+            <!--        Middle Box       -->
+            <div id="MiddleSection" class="MainPageSectionBoxes">
+                <h1 class="MainPageBoxHeadings">What are some of the skills required?</h1>
+                <div id="MiddleSectionImg" class="MainPageBoxImages"></div>
+                <p id="MiddleSectionText" class="SectionBoxText">Depending on the type of test that is carried out, a different skill set will be needed. For the most part, in-depth knowledge of computer systems and their methods of operation are key to succeed in this role. The ability to program proficiently in a number of key languages will also assist the user in creation of custom exploits and payloads, as well as facilitating their understanding of the target system.
+                    Good analytical skills are also required when it comes to this particular task, as security vulnerabilities may be incredibly hard to detect or notice, often a tiny discrepancy in the security of a system will be enough for a skilled malicious user to exploit.
+                </p>
+            </div>
+            <!--        Lower Box        -->
+            <div id="LowerSection" class="MainPageSectionBoxes">
+                <h1 class="MainPageBoxHeadings">Tools Used in Penetration Testing</h1>
+                <div id="LowerSectionImg" class="MainPageBoxImages"></div>
+                <p id="LowerSectionText" class="SectionBoxText">Whilst a lot of the routine “analysis” of systems is done by software suites and well-known applications such as Metasploit and Nmap, a lot of the exploits and payloads used in hacking attempts are custom-made for a specific system and therefore a good knowledge of programming is key. Most of the tools required are often Linux-based, however some frameworks and applications are cross platform. One of the most common starting points for this would be Kali Linux, a Linux distribution that is designed for penetration testing.</p>
+            </div>
+        </div>
+
+        <div id="RightBanner" class="MainPageSection">
+            <div id="RightBannerImage" class="BannerImageBox"></div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div id="PageFooter">
+        <p>Matthew Boyce, b018567j@student.staffs.ac.uk, All images obtained from www.unsplash.com - License available at https://unsplash.com/license</p>
+    </div>
+</footer>
+<script>
+    //check whether browser support service workers
+    if ('serviceWorker' in navigator) {
+        //wait until page loaded to avoid delaying rendering
+        window.addEventListener('load', function() {
+            //register service worker
+            navigator.serviceWorker.register('serviceworker.js').then(
+                function(registration) {
+                    console.log('Service worker registration successful',
+                        registration);
+                },
+                function(err) {
+                    console.log('Service worker registration failed', err);
+                });
+        });
+    }
+</script>
+</body>
+</html>

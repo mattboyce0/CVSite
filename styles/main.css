@@ -1,0 +1,122 @@
+/* Variables */
+:root{
+    --page-text-colour: black;
+    --page-font-master: Calibri;
+/*    Colour Scheme Settings*/
+    --tint-colour: #999999;
+    --main-colour: #e8e8e8;
+
+    background-color: var(--main-colour);
+
+}
+
+* {
+    font-family: var(--page-font-master), serif;
+    color: var(--page-text-colour);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*Header properties*/
+header h1{
+    /*border: solid black 1px;*/
+    margin: 0;
+    padding: 0;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+    color: var(--page-text-colour)
+}
+
+/*----------------------------------Navigation Properties--------------------------------*/
+
+/*Navbar properties*/
+#MainNav{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 0;
+    margin: 0;
+    background-color: var(--tint-colour);
+    text-align: center;
+
+}
+
+/*Navigation box properties*/
+
+.NavBox{
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+    border-bottom: solid 3px #999999;
+}
+
+
+.NavBox a:link{
+    text-decoration: none;
+    color: black;
+}
+
+.NavBox a:visited{
+    color: black;
+}
+
+
+.NavBox:hover {
+    background: grey;
+    border-bottom: #80ff00 solid 3px;
+}
+
+/*Banner image properties*/
+
+#bannerImage{
+    background-image: url("../data/img/bannerImg.jpg");
+    background-color: black;
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+/*---------------------------Page Body-----------------------------*/
+
+#HomepageBoxes{
+    border: solid 1px black;
+}
+
+/*Main page headings*/
+.mainPageHeadings {
+    margin:0;
+    padding:10px;
+    background-color: var(--tint-colour);
+
+}
+
+
+/*Homepage Boxes*/
+.MainBox{
+    height: 600px;
+    width: 900px;
+
+
+    /*grid-template-columns: repeat(3, 1fr);*/
+    /*grid-template-rows: repeat(1, 400px);*/
+}
+.ListSpacer{
+    list-style: none;
+}
+
+#QualificationsAndWEContent li{
+    padding:2px;
+}
+
+
+
+
+
+

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--    Android Menu Bar Colour-->
+    <meta name="theme-color" content="#000000">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A CV Site highlighting personal skills and qualities">
+    <link rel="manifest" href="data/json/manifest.json">
+    <!--    Favicon Data-->
+    <link rel="apple-touch-icon" sizes="180x180" href="data/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="data/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="data/img/favicon/favicon-16x16.png">
+    <!--    <link rel="manifest" href="data/img/favicon/site.webmanifest">-->
+    <link rel="mask-icon" href="data/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="data/img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="msapplication-config" content="/data/img/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!--    -->
+    <title>Qualifications</title>
+    <link rel="stylesheet" type="text/css" href="styles/main2.css">
+</head>
+<body>
+<header>
+<!--    Main Heading Bar-->
+    <div id="MainHeadingBar">
+        <div id="MainHeadingImg"></div>
+        <h1 id="MainHeadingText">Qualifications</h1>
+    </div>
+</header>
+
+<!--Main navigation bar-->
+<nav>
+    <ul id="MainNav">
+        <li id="Index" class="NavBox"><a href="index.html">Home</a> </li>
+<!--        <li id="JSPage" class="NavBox"><a href="js_page.html">Coffee</a></li>-->
+        <li id="Qualifications" class="NavBox"><a href="qualifications.html">Qualifications</a></li>
+<!--        <li id="CSSDes1" class="NavBox"><a href="css_des1.html">CSS 1</a> </li>-->
+<!--        <li id="CSSDes2" class="NavBox"><a href="css_des2.html">CSS 2</a> </li>-->
+        <li id="skills" class="NavBox"><a href="skills.html">Skills</a> </li>
+    </ul>
+</nav>
+
+<!--Banner Image-->
+<div id="bannerImage"></div>
+
+<!--Homepage content boxes-->
+<main>
+    <div id="QualificationBoxes">
+        <div id="WorkExperienceBox" class="MainBox">
+            <h2 class="mainPageHeadings">Work Experience</h2>
+            <div id="WorkExperienceImg" class="MainBoxImg"></div>
+            <h3>Previous Employment</h3>
+            <table id="WorkExperienceTable">
+                <tbody>
+                <tr>
+                    <th>Job</th>
+                    <th>Description</th>
+                    <th>Date Undertaken</th>
+                </tr>
+                <tr>
+                    <td>Print Shop Assistant</td>
+                    <td>Assist with a variety of roles related to the printing and application of vehicle and building signs</td>
+                    <td>2016</td>
+                </tr>
+                <tr>
+                    <td>Beater</td>
+                    <td>Scare game birds into the air at a shooting range</td>
+                    <td>2016-17</td>
+                </tr>
+                <tr>
+                    <td>Apprentice Laptop Technician</td>
+                    <td>Repair and maintain a variety of IT equipment, including laptops, desktops and Servers</td>
+                    <td>2017-19</td>
+                </tr>
+                <tr>
+                    <td>School IT Assistant</td>
+                    <td>Assist in the delivery and support of IT sessions in a local primary school</td>
+                    <td>2019</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="QualificationsBox" class="MainBox">
+            <h2 class="mainPageHeadings">Qualifications</h2>
+            <div id="QualificationsImg" class="MainBoxImg"></div>
+<!--            <p id="QualificationsBoxText"></p>-->
+            <div id="QualificationsBoxList">
+                <h3>List of Qualifications</h3>
+                <ul id="WEQualificationsList">
+                    <li>GCSE's Obtained
+                        <ul>
+                            <li>13 A* - C Qualifications, Including
+                                <ul>
+                                    <li>Triple Science</li>
+                                    <li>Spanish</li>
+                                    <li>Maths</li>
+                                    <li>English</li>
+                                    <li>Product Design</li>
+                                    <li>Media Studies</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Higher Level Education
+                        <ul>
+                            <li>A-Level Creative Writing</li>
+                            <li>A-Level Computer Science</li>
+                            <li>A-Level Business Studies</li>
+                            <li>AS-Level Physics</li>
+                        </ul>
+                    </li>
+                    <li>Degree Level Qualifications (Working Towards)
+                        <ul>
+                            <li>BSc (Hons) in Computer Science (Cybersecurity) from the University of Staffordshire</li>
+                        </ul>
+                    </li>
+
+                    <li>Other Qualifications
+                        <ul>
+                            <li>Level 2 Intermediate Apprenticeship for IT, Software, Web and Telecoms Professionals, including the following:</li>
+                            <li>
+                                <ul>
+                                    <li>Level 2 Diploma in Professional Competence</li>
+                                    <li>Level 2 Certificate in systems support</li>
+                                    <li>Functional Skills in English, Maths and ICT at Level 1</li>
+                                </ul>
+                            </li>
+                            <li>Full UK Manual Driving License, Clean</li>
+                            <li>DBS Certified</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div id="HomepageFooter">
+        <p>Matthew Boyce, b018567j@student.staffs.ac.uk, All images obtained from www.unsplash.com - License available at https://unsplash.com/license</p>
+    </div>
+</footer>
+<script>
+    //check whether browser support service workers
+    if ('serviceWorker' in navigator) {
+        //wait until page loaded to avoid delaying rendering
+        window.addEventListener('load', function() {
+            //register service worker
+            navigator.serviceWorker.register('serviceworker.js').then(
+                function(registration) {
+                    console.log('Service worker registration successful',
+                        registration);
+                },
+                function(err) {
+                    console.log('Service worker registration failed', err);
+                });
+        });
+    }
+</script>
+</body>
+</html>

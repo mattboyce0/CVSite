@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--    Android Menu Bar Colour-->
+    <meta name="description" content="A CV Site highlighting personal skills and qualities">
+    <link rel="manifest" href="data/json/manifest.json">
+<!--    Favicon Data-->
+    <link rel="apple-touch-icon" sizes="180x180" href="data/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="data/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="data/img/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="data/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="data/img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="msapplication-config" content="/data/img/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+<!--    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coffee Page</title>
+    <link rel="stylesheet" type="text/css" href="styles/main2.css">
+</head>
+<body>
+<header>
+    <div id="MainHeadingBar">
+        <div id="MainHeadingImg"></div>
+        <h1 id="MainHeadingText">Coffee Page</h1>
+    </div>
+</header>
+
+<nav>
+    <ul id="MainNav">
+        <li id="Index" class="NavBox"><a href="index.html">Home</a> </li>
+<!--        <li id="JSPage" class="NavBox"><a href="js_page.html">Coffee</a></li>-->
+        <li id="Qualifications" class="NavBox"><a href="qualifications.html">Qualifications</a> </li>
+<!--        <li id="CSSDes1" class="NavBox"><a href="css_des1.html">CSS 1</a> </li>-->
+<!--        <li id="CSSDes2" class="NavBox"><a href="css_des2.html">CSS 2</a> </li>-->
+        <li id="skills" class="NavBox"><a href="skills.html">Skills</a> </li>
+    </ul>
+</nav>
+<div id="bannerImage"></div>
+<main>
+<div id="OrderPage">
+
+    <div id="OrderGrid">
+        <div id="InfoPanel" class="CoffeePageBox">
+            <h1 class="CoffeePageHeading">Order Your Coffee Here!</h1>
+            <p>Nothing like a cup of enslaved Caffeine</p>
+            <table id="menuTable">
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Small Drink</td>
+                    <td>£2.45</td>
+                </tr>
+                <tr>
+                    <td>Medium Drink</td>
+                    <td>£2.65</td>
+                </tr>
+                <tr>
+                    <td>Large Drink</td>
+                    <td>£2.85</td>
+                </tr>
+                <tr>
+                    <td>Extra Cream</td>
+                    <td>£0.50</td>
+                </tr>
+                <tr>
+                    <td>Syrup Shot (Each)</td>
+                    <td>£0.25</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="ControlsBox" class="CoffeePageBox" >
+        <h1 class="CoffeePageHeading">Drink Selection</h1>
+        <div id="DrinkSizeSelection" class="DrinkSelectionPanel">
+            <fieldset><legend>Drink Size Selection</legend>
+                <ul>
+                    <li><input type="radio" id="DrinkSizeLarge" name="DrinkSizeSelection" value="L"><label for="DrinkSizeLarge">Large</label></li>
+                    <li><input type="radio" id="DrinkSizeMedium" name="DrinkSizeSelection" value="M"><label for="DrinkSizeMedium">Medium</label></li>
+                    <li><input type="radio" id="DrinkSizeSmall" name="DrinkSizeSelection" value="S"><label for="DrinkSizeSmall">Small</label></li>
+                </ul>
+            </fieldset>
+        </div>
+        <div id="DrinkTypeSelection" class="DrinkSelectionPanel">
+            <fieldset><Legend>Coffee Type</Legend>
+                <ul>
+                    <li><input type="radio" id="DrinkTypeLatte" name="DrinkTypeSelection" value="LATTE"><label for="DrinkTypeLatte">Latte</label></li>
+                    <li><input type="radio" id="DrinkTypeCappucino" name="DrinkTypeSelection" value="CAPPUCINO"><label for="DrinkTypeCappucino">Cappucino</label></li>
+                    <li><input type="radio" id="DrinkTypeFlatWhite" name="DrinkTypeSelection" value="FLATW"><label for="DrinkTypeFlatWhite">Flat White</label></li>
+                    <li><input type="radio" id="DrinkTypeEspresso" name="DrinkTypeSelection" value="ESPRESSO"><label for="DrinkTypeEspresso">Espresso</label></li>
+                    <li><input type="radio" id="DrinkTypeAmericano" name="DrinkTypeSelection" value="AMERICANO"><label for="DrinkTypeAmericano">Americano</label></li>
+                </ul>
+            </fieldset>
+        </div>
+        <div id="MilkRequiredSelection" class="DrinkSelectionPanel">
+        </div>
+        <div id="Milk" class="DrinkSelectionPanel">
+            <ul>
+                <li><input type="checkbox" id="MilkRequired"><label for="MilkRequired">Milk Required</label></li>
+                <li>
+                    <fieldset id="MilkSelectionField"><legend>Milk Selection</legend>
+                        <ul>
+                            <li><input type="radio" id="MilkTypeWhole" name="MilkTypeSelection" value="WHOLE"><label for="MilkTypeWhole">Whole Milk</label></li>
+                            <li><input type="radio" id="MilkTypeSemi" name="MilkTypeSelection" value="SEMI"><label for ="MilkTypeSemi">Semi-Skimmed</label></li>
+                            <li><input type="radio" id="MilkTypeSkimmed" name="MilkTypeSelection" value="SKIMMED"><label for="MilkTypeSkimmed">Skimmed</label></li>
+                            <li><input type="radio" id="MilkTypeCoconut" name="MilkTypeSelection" value="COCONUT"><label for="MilkTypeCoconut">Coconut</label></li>
+                            <li><input type="radio" id="MilkTypeSoya" name="MilkTypeSelection" value="SOYA"><label for="MilkTypeSoya">Soya</label></li>
+                        </ul>
+                    </fieldset>
+                </li>
+            </ul>
+        </div>
+        <div id="Extras" class="DrinkSelectionPanel">
+            <h3>Any Extras?</h3>
+            <fieldset><legend>Extras Selection</legend>
+                <ul>
+                    <li><input type="checkbox" id="SugarRequired" name="ExtrasSelection"><label for="SugarRequired">Sugar</label></li>
+                    <li><input type="checkbox" id="CreamRequired" name="ExtrasSelection"><label for="CreamRequired">Cream</label></li>
+                    <li><input type="checkbox" id="SyrupRequired" name="ExtrasSelection"><label for="SyrupRequired">Syrup Shot</label></li>
+                    <li id="SyrupRangeSelector">
+                        <ul>
+                            <li><input type="range" min="1" max="5" id="SyrupQuantity"><label for="SyrupQuantity">Number of Shots</label></li>
+                        </ul>
+                    </li>
+                </ul>
+            </fieldset>
+        </div>
+    </div>
+
+        <div id="OrderBox" class="CoffeePageBox">
+            <h1 class="CoffeePageHeading">Order Summary</h1>
+            <table id="OrderSummaryTable">
+                <tbody id="OrderSummaryTableBody">
+                <tr>
+                    <th>Drink</th>
+                    <th>Extras</th>
+                    <th>Drink Price</th>
+                </tr>
+                </tbody>
+                <tfoot id="OrderSummaryTableFooter">
+                </tfoot>
+            </table>
+            <div id="OrderTotal">
+                <p id="OrderTotalText"></p>
+            </div>
+            <div id="ControlsBoxOrderButtons">
+                <button id="AddToOrder" class="OrderButton">Add To Order</button>
+                <button id="PlaceOrder" class="OrderButton">Place Order</button>
+                <button id="ClearOrder" class="OrderButton">Clear Order</button>
+                <button id="AddFavourite" class="OrderButton">Add Favourite</button>
+                <button id="LoadFavourite" class="OrderButton">Load Favourite</button>
+            </div>
+            <div id="OrderPlacedMessageBar"></div>
+    </div>
+    </div>
+</div>
+</main>
+
+<footer>
+    <div id="HomepageFooter">
+        <p>Matthew Boyce, b018567j@student.staffs.ac.uk, All images obtained from www.unsplash.com - License available at https://unsplash.com/license</p>
+    </div>
+</footer>
+<script src="scripts/caffeine.js"></script>
+<script>
+    //check whether browser support service workers
+    if ('serviceWorker' in navigator) {
+        //wait until page loaded to avoid delaying rendering
+        window.addEventListener('load', function() {
+            //register service worker
+            navigator.serviceWorker.register('serviceworker.js').then(
+                function(registration) {
+                    console.log('Service worker registration successful',
+                        registration);
+                },
+                function(err) {
+                    console.log('Service worker registration failed', err);
+                });
+        });
+    }
+</script>
+</body>
+</html>

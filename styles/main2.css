@@ -1,0 +1,1335 @@
+/*Variables*/
+:root{
+
+    /*Page width variables*/
+    --mobile-page-max-width: 300px;
+    --mobile-page-min-width: 0px;
+    --tablet-page-max-width: 700px;
+    --tablet-page-min-width: 301px;
+    --dekstop-page-max-width: 2000px;
+    --dekstop-page-min-width: 701px;
+
+    /*Colour and theme settings*/
+    --page-text-colour: black;
+    --page-font-master: Ubuntu;
+    --tint-colour: #999999;
+    --main-colour: #e8e8e8;
+    --sub-tint-colour: #80ff00;
+
+    /*Margin and padding settings*/
+    --page-master-padding: 10px;
+    --page-master-margins: 10px;
+    --page-lr-padding: 15px;
+    --page-border-widgh: 3px;
+}
+
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("../data/font/ubuntu-regular-webfont.woff") format("woff")
+}
+
+* {
+    font-family: var(--page-font-master);
+    color: var(--page-text-colour);
+    margin: 0;
+}
+
+header h1 {
+    /*border: solid black 1px;*/
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    color: white;
+    background-color: black;
+}
+
+#MainHeadingImg {
+    background-image: url("../data/img/LogoImg.png");
+    background-color: black;
+    height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 10%;
+}
+
+#MainHeadingText {
+    text-align: center;
+}
+
+/*Navigation Bar properties*/
+#MainNav {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+    margin: 0;
+    background-color: var(--tint-colour);
+    text-align: center;
+
+}
+
+.NavBox {
+    font-size: 13px;
+    padding: 15%;
+    list-style: none;
+    margin: 0;
+    border-bottom: solid 3px var(--sub-tint-colour);
+}
+
+.NavBox a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.NavBox a:visited {
+    color: black;
+}
+
+/*    Banner Image Properties*/
+#bannerImage {
+    background-image: url("../data/img/resized/mobile/bannerImg.webp");
+    background-color: black;
+    height: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px;
+    margin: 0;
+}
+
+/*    Homepage Boxes*/
+.mainPageHeadings {
+    margin: 0;
+    padding: 10px;
+    background-color: var(--tint-colour);
+    text-align: center;
+}
+
+
+/*Homepage Boxes*/
+#HomepageBoxes {
+}
+
+/*Personal content boxes*/
+#AboutMe {
+    grid-row: 1;
+}
+
+#AboutMe h3 {
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#AboutMe p {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#Interests {
+    grid-column: 1;
+    grid-row: 1;
+
+}
+
+#Interests h3 {
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#Interests p {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#WEQ {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#WEQ h3 {
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#WEQ p {
+    padding-left: 2%;
+    padding-right: 2%
+}
+
+#WEQ ul {
+    padding-left: 15%;
+    padding-right: 2%;
+}
+
+.MainBox {
+    padding: 1%;
+}
+
+#HomepageBoxes h3{
+    text-align: center;
+    border-bottom: solid black 1px;
+    margin: 3%
+}
+
+#AboutMeImg {
+    /*background-image: url("../data/img/MainBoxAboutMeImg.jpg");*/
+    background-image: url("../data/img/resized/mobile/aboutme.webp");
+    background-color: black;
+    height: 175px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#InterestsImg {
+    /*background-image: url("../data/img/codeimg.jpg");*/
+    background-image: url("../data/img/resized/mobile/codeimg.webp");
+    background-color: black;
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#WEQImg {
+    /*background-image: url("../data/img/jobimg.jpg");*/
+    background-image: url("../data/img/resized/mobile/jobimg.webp");
+    background-color: black;
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Footer Styling*/
+#HomepageFooter * {
+    background: black;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+#HomepageFooter p {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    text-align: center;
+}
+
+/*    Qualifications Page Styling*/
+
+#QualificationsImg {
+    /*background-image: url("../data/img/MainBoxAboutMeImg.jpg");*/
+    background-image: url("../data/img/resized/desktop/skillsimg.webp");
+    background-color: black;
+    height: 175px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+
+}
+
+#WorkExperienceImg {
+    /*background-image: url("../data/img/MainBoxAboutMeImg.jpg");*/
+    background-image: url("../data/img/resized/desktop/workexperienceimg.webp");
+    background-color: black;
+    height: 175px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+#WorkExperienceBoxText{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#QualificationsBoxList{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+/*    Coffee Page Styling*/
+
+.DrinkSelectionPanel{
+    margin:6%;
+}
+
+
+
+#ControlsBoxOrderButtons{
+    text-align: center;
+    padding-bottom: 6%;
+}
+
+.OrderButton{
+    margin: 2%;
+    border-radius: 25px;
+    border: solid black 2px;
+}
+
+.DrinkSelectionPanel input{
+    height: 48px;
+    width: 48px;
+}
+
+.OrderButton{
+    padding: 2%;
+}
+
+.CoffeePageHeading{
+    text-align: center;
+    background-color: var(--tint-colour);
+}
+
+#InfoPanel{
+    text-align: center;
+    align-content: center;
+}
+
+#menuTable {
+    text-align: center;
+    align-content: center;
+    padding-left: 25%;
+}
+
+#menuTable td{
+    margin: 30px;
+}
+
+#OrderSummaryTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#OrderSummaryCell{
+    /*row-span: 3;*/
+}
+
+#OrderTotal{
+    padding: 10%;
+    text-align: center;
+    font-size: 140%;
+}
+
+/*    Skills Page Styling*/
+.mainPageHeadings{
+    padding: 2%;
+    margin-bottom: 0;
+}
+
+#AboutCSSJSImg{
+    background-image: url("../data/img/orig/tab-vector-html5-6-transparent.png");
+    background-color: white;
+    height: 175px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#AboutCSSJS h3{
+    text-align: center;
+    border-bottom: solid black 1px;
+    margin-bottom: 2%;
+    padding-bottom: 1%;
+    margin-top: 2%;
+}
+
+#AboutCSSJS p{
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 3%;
+}
+
+#DesignPagesContainer h3{
+    text-align: center;
+    border-bottom: solid black 1px;
+    margin-bottom: 2%;
+    padding-bottom: 1%;
+    margin-top: 2%;
+}
+
+.DesignBoxImg{
+    background-image: url("../data/img/orig/tab-vector-html5-6-transparent.png");
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0;
+}
+
+#CSSDesignImgOne{
+    background-image: url("../data/img/orig/css_des1_scrnsht.webp");
+}
+
+#CSSDesignImgTwo{
+    background-image: url("../data/img/orig/css_des2_scrnsht.webp");
+}
+
+#JSDesignImg{
+    background-image: url("../data/img/orig/jspagescreenshot.JPG");
+}
+
+#DesignPagesContainer p{
+    padding: 4%;
+}
+
+.DesignPageLinkBox{
+    border-bottom: solid #80ff00 3px;
+    background-color: var(--tint-colour);
+    padding: 4%;
+    margin: 4%;
+    text-align: center;
+}
+
+.DesignPageLinkBox a{
+    text-decoration: none;
+}
+
+.DesignPageLinkBox a:visited{
+    text-decoration: none;
+
+}
+
+/*TABLET STYLING*/
+@media screen
+and (max-width: 1024px)
+and (min-width: 621px)
+{
+    * {
+        font-family: Ubuntu, serif;
+        color: var(--page-text-colour);
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    /*header img{*/
+
+    /*Header properties*/
+    header h1 {
+        /*border: solid black 1px;*/
+        margin: 0;
+        padding: 0;
+        padding-bottom: 1%;
+        padding-top: 1%;
+        padding-left: 10%;
+        color: white;
+        background-color: black;
+    }
+
+    #MainHeadingImg {
+        background-image: url("../data/img/LogoImg.png");
+        background-color: black;
+        height: 40px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-top: 0.75%;
+        padding-left: 10%;
+        float: left;
+    }
+
+    /*----------------------------------Navigation Properties--------------------------------*/
+    /*Navbar properties*/
+    #MainNav {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0;
+        margin: 0;
+        background-color: var(--tint-colour);
+        text-align: center;
+    }
+
+    .NavBox {
+        padding: 10px;
+        list-style: none;
+        margin: 0;
+        border-bottom: solid 3px #80ff00;
+    }
+
+    .NavBox a:link {
+        text-decoration: none;
+        color: black;
+    }
+
+    .NavBox a:visited {
+        color: black;
+    }
+
+    /*Homepage Styling*/
+    /*Banner image properties*/
+    #bannerImage {
+        background-image: url("../data/img/resized/desktop/bannerImg.webp");
+        background-color: black;
+        height: 200px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 0;
+        margin: 0;
+    }
+
+    /*Main page headings*/
+    .mainPageHeadings {
+        margin: 0;
+        padding: 10px;
+        background-color: var(--tint-colour);
+        text-align: center;
+    }
+
+
+    /*Homepage Boxes*/
+    #HomepageBoxes {
+        /*border: solid 1px black;*/
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 47% 40% 100px;
+    }
+
+    /*Personal content boxes*/
+    #AboutMe {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    #AboutMe h3 {
+        padding-top: 1%;
+        padding-left: 2%;
+        padding-right: 2%;
+        border-bottom: solid black 3px;
+    }
+
+    #AboutMe p {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    #Interests {
+        grid-column: 1;
+        grid-row: 1;
+
+    }
+
+    #Interests h3 {
+        padding-top: 1%;
+        padding-left: 2%;
+        padding-right: 2%;
+        border-bottom: solid black 3px;
+    }
+
+    #Interests p {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    #WEQ {
+        grid-column: 1/ span 2;
+        grid-row: 2;
+    }
+
+    #WEQ h3 {
+        padding-top: 1%;
+        padding-left: 2%;
+        padding-right: 2%;
+        border-bottom: solid black 3px;
+    }
+
+    #WEQ p {
+        padding-left: 2%;
+        padding-right: 2%
+    }
+
+    #WEQ ul {
+        padding-left: 15%;
+        padding-right: 2%;
+    }
+
+    .MainBox {
+        padding: 3%;
+    }
+
+    #AboutMeImg {
+        /*background-image: url("../data/img/MainBoxAboutMeImg.jpg");*/
+        background-image: url("../data/img/resized/desktop/aboutme.webp");
+        background-color: black;
+        height: 250px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #InterestsImg {
+        /*background-image: url("../data/img/codeimg.jpg");*/
+        background-image: url("../data/img/resized/desktop/codeimg.webp");
+        background-color: black;
+        height: 250px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #WEQImg {
+        /*background-image: url("../data/img/jobimg.jpg");*/
+        background-image: url("../data/img/resized/desktop/jobimg.webp");
+        background-color: black;
+        height: 250px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /*Footer Styling*/
+    #HomepageFooter * {
+        background: black;
+        padding: 0;
+        margin: 0;
+        color: white;
+    }
+
+    #HomepageFooter p {
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        text-align: center;
+    }
+
+/*    Coffee Page Styling*/
+    #OrderGrid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 33% 66%;
+        grid-gap: 2%;
+        text-align: center;
+    }
+
+    .OrderButton{
+        margin: 2%;
+        border-radius: 25px;
+        border: solid black 2px;
+    }
+
+    .DrinkSelectionPanel input{
+        height: 20px;
+        width: 20px;
+    }
+
+    .CoffeePageBox {
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .CoffeePageHeading {
+        background-color: var(--tint-colour);
+        margin: 0;
+        padding-top: 1%;
+        padding-bottom: 1%;
+
+    }
+
+    /*Controls Box Styling*/
+    #ControlsBoxOrderButtons {
+        text-align: center;
+    }
+
+    #ControlsBox fieldset {
+        border: solid black 1px;
+        text-align: left;
+        margin: 0;
+    }
+
+    /*Info Panel Styling*/
+    #InfoPanel {
+        align-content: center;
+        text-align: center;
+
+        border: solid black 1px;
+        grid-column: 1 / span 3;
+        padding-bottom: 35%;
+
+    }
+
+    #menuTable{
+        text-align: center;
+        align-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    /*Order box styling*/
+    #OrderBox {
+        grid-column: 2;
+        border: solid black 1px;
+    }
+
+    #OrderSummaryTable {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    #OrderSummaryTable th {
+        border-bottom: solid black 1px;
+        border-top: solid black 1px;
+        padding: 2%;
+    }
+
+    #OrderSummaryTableSummaryRow th {
+        color: white;
+        background-color: black;
+    }
+
+    #OrderTotalText{
+        font-size: 200%;
+
+    }
+
+/*    Qualifications Page Styling*/
+
+    #QualificationBoxes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 100px;
+    }
+
+    #QualificationBoxes p {
+        padding: 20px;
+    }
+
+    #WorkExperienceBox {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #QualificationsBox {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    #QualificationsImg {
+        background-image: url("../data/img/resized/desktop/skillsimg.webp");
+        background-color: black;
+        height: 250px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #WorkExperienceImg {
+        background-image: url("../data/img/resized/desktop/workexperienceimg.webp");
+        background-color: black;
+        height: 250px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #WorkExperienceTable {
+        border-spacing: 1em;
+    }
+
+    #WorkExperienceTable td {
+        text-align: center;
+    }
+
+/*    Skills page styling*/
+
+    #AboutCSSJS {
+        padding: 2%;
+    }
+
+    #AboutCSSJS h2 {
+        margin-bottom: 5%;
+    }
+
+
+    #AboutCSSJSImg {
+        background-image: url("../data/img/orig/tab-vector-html5-6-transparent.png");
+        height: 250px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 0;
+        margin: 0;
+    }
+
+    #DesignPagesContainer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        grid-gap: 2%;
+        grid-template-rows: 60px auto;
+        margin-left: 2%;
+        margin-right: 2%;
+        padding: 0;
+        padding-bottom: 30px;
+        align-content: center;
+
+    }
+
+    #DesignPagesHeading{
+        grid-column: 1/4;
+    }
+
+    .DesignPageBox{
+        grid-row: 2;
+        align-content: center;
+        text-align: center;
+    }
+
+    #CSSDesignBoxOne{
+        grid-column: 1;
+    }
+
+    #CSSDesignBoxTwo{
+        grid-column: 2;
+    }
+
+    #JSDesignBox{
+        grid-column: 3;
+    }
+
+    .DesignDescriptionParagraph{
+        margin: 2%;
+        padding: 2%;
+        height: 150px;
+        text-align: left;
+
+
+    }
+
+    .DesignBoxImg{
+        background-image: url("../data/img/orig/tab-vector-html5-6-transparent.png");
+        height: 250px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 0;
+        margin: 0;
+    }
+
+    #CSSDesignImgOne{
+        background-image: url("../data/img/orig/css_des1_scrnsht.webp");
+    }
+
+    #CSSDesignImgTwo{
+        background-image: url("../data/img/orig/css_des2_scrnsht.webp");
+    }
+
+    #JSDesignImg{
+        background-image: url("../data/img/orig/jspagescreenshot.JPG");
+    }
+
+    .DesignBoxHeader{
+        background-color: grey;
+        padding: 3%;
+        margin: 0;
+    }
+
+    .DesignPageLinkBox{
+        border-bottom: solid var(--tint-colour) 3px;
+        background-color: var(--tint-colour);
+        margin-top: 12%;
+        padding: 2%;
+        text-align: center;
+    }
+
+    .DesignPageLinkBox:hover{
+        border-bottom: solid #80ff00 3px;
+    }
+
+    .DesignPageLinkBox a {
+        text-decoration: none;
+    }
+
+    .DesignPgaeLinkBox a:visited {
+        text-decoration: none;
+    }
+
+}
+
+/*DESKTOP STYLING*/
+@media screen
+and (min-width: 1025px) {
+    * {
+        font-family: Ubuntu, serif;
+        color: var(--page-text-colour);
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    /*Header properties*/
+    header h1 {
+        margin: 0;
+        padding: 0;
+        padding-bottom: 1%;
+        padding-top: 1%;
+        padding-left: 10%;
+        color: white;
+        background-color: black;
+    }
+
+    #MainHeadingImg {
+        background-image: url("../data/img/LogoImg.png");
+        background-color: black;
+        height: 50px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-top: 0.75%;
+        padding-left: 10%;
+        float: left;
+    }
+
+    #MainHeadingText{
+        text-align: left;
+    }
+
+    /*----------------------------------Navigation Properties--------------------------------*/
+    /*Navbar properties*/
+    #MainNav {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0;
+        margin: 0;
+        background-color: var(--tint-colour);
+        text-align: center;
+    }
+
+    .NavBox {
+        padding: 10px;
+        list-style: none;
+        margin: 0;
+        border-bottom: solid 3px #999999;
+    }
+
+    .NavBox a:link {
+        text-decoration: none;
+        color: black;
+    }
+
+    .NavBox a:visited {
+        color: black;
+    }
+
+
+    .NavBox:hover {
+        background: grey;
+        border-bottom: #80ff00 solid 3px;
+    }
+
+    /*Banner image properties*/
+    #bannerImage {
+        background-image: url("../data/img/resized/desktop/bannerImg.webp");
+        background-color: black;
+        height: 250px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 0;
+        margin: 0;
+    }
+
+    /*----------------HOMEPAGE STYLING------------------*/
+    /*Main page headings*/
+    .mainPageHeadings {
+        margin: 0;
+        padding: 10px;
+        background-color: var(--tint-colour);
+        text-align: center;
+    }
+
+
+    /*Homepage Boxes*/
+    #HomepageBoxes {
+        /*border: solid 1px black;*/
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 100px;
+    }
+
+    /*Personal content boxes*/
+    #AboutMe {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #AboutMe h3 {
+        padding-top: 1%;
+        padding-left: 2%;
+        padding-right: 2%;
+        border-bottom: solid black 3px;
+    }
+
+    #AboutMe p {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    #Interests {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    #Interests h3 {
+        padding-top: 1%;
+        padding-left: 2%;
+        padding-right: 2%;
+        border-bottom: solid black 3px;
+    }
+
+    #Interests p {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    #WEQ {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    #WEQ h3 {
+        padding-top: 1%;
+        padding-left: 2%;
+        padding-right: 2%;
+        border-bottom: solid black 3px;
+    }
+
+    #WEQ p {
+        padding-left: 2%;
+        padding-right: 2%
+    }
+
+    #WEQ ul {
+        padding-left: 15%;
+        padding-right: 2%;
+    }
+
+    .MainBox {
+        padding: 3%;
+    }
+
+    .MainBox h3{
+        border-bottom: solid black 3px;
+    }
+
+    #AboutMeImg {
+        /*background-image: url("../data/img/MainBoxAboutMeImg.jpg");*/
+        background-image: url("../data/img/resized/desktop/aboutme.webp");
+        background-color: black;
+        height: 250px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #InterestsImg {
+        /*background-image: url("../data/img/codeimg.jpg");*/
+        background-image: url("../data/img/resized/desktop/codeimg.webp");
+        background-color: black;
+        height: 250px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #WEQImg {
+        /*background-image: url("../data/img/jobimg.jpg");*/
+        background-image: url("../data/img/resized/desktop/jobimg.webp");
+        background-color: black;
+        height: 250px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /*Footer Styling*/
+    #HomepageFooter * {
+        background: black;
+        padding: 0;
+        margin: 0;
+        color: white;
+    }
+
+    #HomepageFooter p {
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        text-align: center;
+    }
+
+    /*--------------------------------- COFFEE PAGE STYLING ---------------------------*/
+    #OrderGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 100%;
+        grid-gap: 5%;
+        padding: 2%;
+        margin-bottom: 10%;
+        text-align: center;
+    }
+
+    .CoffeePageBox {
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .CoffeePageHeading {
+        background-color: var(--tint-colour);
+        margin: 0;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    /*Controls Box Styling*/
+
+    .DrinkSelectionPanel{
+        display: block;
+    }
+
+    #ControlsBoxOrderButtons {
+        text-align: center;
+    }
+
+    .OrderButton{
+        margin: 2%;
+        border-radius: 25px;
+        border: solid black 2px;
+    }
+
+    .OrderButton:hover{
+        background-color: #80ff00;
+    }
+
+    #ControlsBox fieldset {
+        border: solid black 1px;
+        text-align: left;
+        margin: 0;
+
+    }
+
+    .DrinkSelectionPanel input{
+        height: 20px;
+        width: 20px;
+    }
+
+    /*Info Panel Styling*/
+    #InfoPanel {
+        border: solid black 1px;
+        grid-column: 1;
+
+    }
+
+    /*Order box styling*/
+    #OrderBox {
+        grid-column: 3;
+        border: solid black 1px;
+    }
+
+    #OrderSummaryTable {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    #OrderSummaryTable th {
+        border-bottom: solid black 1px;
+        border-top: solid black 1px;
+        padding: 2%;
+    }
+
+    #OrderSummaryTableSummaryRow th {
+        color: white;
+        background-color: black;
+    }
+
+    #OrderTotalText {
+        font-size: 200%;
+
+    }
+
+    /*--------------------------------- Qualifications page styling ---------------------------*/
+    /*Qualifications Boxes*/
+    #QualificationBoxes {
+        /*border: solid 1px black;*/
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 100px;
+    }
+
+    #QualificationBoxes p {
+        padding: 20px;
+    }
+
+    #WorkExperienceBox {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #QualificationsBox {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    #QualificationsImg {
+        /*background-image: url("../data/img/MainBoxAboutMeImg.jpg");*/
+        background-image: url("../data/img/resized/desktop/skillsimg.webp");
+        background-color: black;
+        height: 250px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #WorkExperienceImg {
+        /*background-image: url("../data/img/MainBoxAboutMeImg.jpg");*/
+        background-image: url("../data/img/resized/desktop/workexperienceimg.webp");
+        background-color: black;
+        height: 250px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #WorkExperienceTable {
+        border-spacing: 1em;
+    }
+
+    #WorkExperienceTable td {
+        text-align: center;
+    }
+
+
+    /*--------------------------------- Skills Page Styling ---------------------------*/
+
+    #AboutCSSJS {
+        padding: 2%;
+    }
+
+    #AboutCSSJS h2 {
+        margin-bottom: 5%;
+    }
+
+
+    #AboutCSSJSImg {
+        background-image: url("../data/img/orig/tab-vector-html5-6-transparent.png");
+        height: 250px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 0;
+        margin: 0;
+    }
+
+    #DesignPagesContainer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        grid-gap: 2%;
+        grid-template-rows: 60px auto;
+        margin-left: 2%;
+        margin-right: 2%;
+        padding: 0;
+        padding-bottom: 30px;
+        align-content: center;
+
+    }
+
+    #DesignPagesHeading{
+        grid-column: 1/4;
+    }
+
+    .DesignPageBox{
+        grid-row: 2;
+        align-content: center;
+        text-align: center;
+    }
+
+    #CSSDesignBoxOne{
+        grid-column: 1;
+    }
+
+    #CSSDesignBoxTwo{
+        grid-column: 2;
+    }
+
+    #JSDesignBox{
+        grid-column: 3;
+    }
+
+    .DesignDescriptionParagraph{
+        margin: 2%;
+        padding: 2%;
+        text-align: left;
+        height: 50px;
+
+
+    }
+
+    .DesignBoxImg{
+        background-image: url("../data/img/orig/tab-vector-html5-6-transparent.png");
+        height: 250px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 0;
+        margin: 0;
+    }
+
+    #CSSDesignImgOne{
+        background-image: url("../data/img/orig/css_des1_scrnsht.webp");
+    }
+
+    #CSSDesignImgTwo{
+        background-image: url("../data/img/orig/css_des2_scrnsht.webp");
+    }
+
+    #JSDesignImg{
+        background-image: url("../data/img/orig/jspagescreenshot.JPG");
+    }
+
+    .DesignBoxHeader{
+        background-color: grey;
+        padding: 3%;
+        margin: 0;
+    }
+
+    .DesignPageLinkBox{
+        border-bottom: solid var(--tint-colour) 3px;
+        background-color: var(--tint-colour);
+        margin-top: 12%;
+        padding: 2%;
+        text-align: center;
+    }
+
+    .DesignPageLinkBox:hover{
+        border-bottom: solid #80ff00 3px;
+    }
+
+    .DesignPageLinkBox a {
+        text-decoration: none;
+    }
+
+    .DesignPgaeLinkBox a:visited {
+        text-decoration: none;
+    }
+}

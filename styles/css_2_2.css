@@ -1,0 +1,318 @@
+/*Mobile Styling*/
+
+*{
+    font-family: "Maven Pro", sans-serif;
+    background-color: #8049e0;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+#MainHeadingText{
+    font-family: DymoFontInvers, sans-serif;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-image: url("../data/img/resized/desktop/jobimg.webp");
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    background-color: black;
+    margin: 0;
+    border: solid black 4px;
+}
+
+#MainNav {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    text-align: center;
+    background-image: none;
+}
+
+.NavBox {
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+    color: white;
+    background-image: linear-gradient(to bottom, white, #8049e0);
+    border-bottom: solid #8049e0 3px;
+}
+
+.NavBox a:link {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    background-image: none;
+    background-color: greenyellow;
+    padding: 6px;
+    border-radius: 90px;
+}
+
+.NavBox a:visited {
+    color: white;
+    font-size: 20px;
+    background-color: black;
+}
+
+.MainPageSectionBoxes{
+    padding: 2%;
+}
+
+.MainPageBoxHeadings{
+    background-color: black;
+    border-radius: 35px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 2%;
+    font-size: 25px;
+    text-align: center;
+}
+
+.MainPageBoxImages{
+    background-color: black;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px 25px 0 0;
+}
+
+.SectionBoxText{
+    background-color: black;
+    padding: 4%;
+    border-radius: 0 0 25px 25px;
+}
+
+#UpperSectionImg{
+    background-image: url("../data/img/resized/mobile/pentestimg1.webp");
+}
+
+#MiddleSectionImg{
+    background-image: url("../data/img/resized/mobile/pentestimg2.webp");
+}
+
+#LowerSectionImg{
+    background-image: url("../data/img/resized/mobile/pentestimg3.webp");
+}
+
+#PageFooter p{
+    background-image: linear-gradient(to bottom, #8049e0, black);
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+
+
+/*Tablet Styling*/
+/*@media screen*/
+/*and (max-device-width: 1024px)*/
+/*and (min-device-width: 621px)*/
+/*{*/
+
+/*}*/
+
+/*Desktop Styling*/
+@media screen
+and (min-device-width: 800px)
+{
+    *{
+        font-family: "Maven Pro", sans-serif;
+        /*background-image: linear-gradient(to bottom right, red, purple, darkblue, black);*/
+        background-color: #8049e0;
+        padding: 0;
+        margin: 0;
+        color: white;
+    }
+
+/*    Main Heading Bar */
+    #MainHeadingImg{
+        display: none;
+    }
+
+    #MainHeadingText{
+        font-family: Consolas, sans-serif;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        background-image: url("../data/img/resized/desktop/jobimg.webp");
+        height: 250px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: black;
+        font-weight: bold;
+        font-size: 80px;
+        text-align: center;
+        background-color: black;
+        margin: 0;
+        border: solid black 4px;
+    }
+
+/*    Navigation Bar*/
+    #MainNav {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0;
+        margin: 0;
+        background-color: black;
+        text-align: center;
+        background-image: none;
+    }
+
+    .NavBox {
+        padding: 10px;
+        list-style: none;
+        margin: 0;
+        color: white;
+        background-image: linear-gradient(to bottom, white, #8049e0);
+        border-bottom: solid #8049e0 3px;
+
+
+    }
+
+    .NavBox a:link {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        background-image: none;
+        background-color: greenyellow;
+        padding: 6px;
+        border-radius: 90px;
+
+    }
+
+    .NavBox a:visited {
+        color: white;
+        font-size: 20px;
+        background-color: black;
+
+
+    }
+
+
+    .NavBox:hover {
+        border-bottom: solid black 3px;
+
+    }
+
+    #GridBox{
+        padding: 3%;
+    }
+    .BannerImageBox{
+        display: none;
+    }
+
+    #MainSection{
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 2%;
+        padding-left: 2%;
+        padding-right: 2%;
+
+    }
+
+    @keyframes slideinleft{
+        from {
+            margin-left: 100%;
+            width: 300%;
+        }
+
+        to {
+            margin-left: 0;
+            width: 100%;
+        }
+    }
+
+    @keyframes slideinright{
+        from {
+            margin-right: 100%;
+            width: 300%;
+        }
+
+        to {
+            margin-right: 0;
+            width: 100%;
+        }
+
+    }
+
+    #UpperSection{
+        animation-duration: 0.75s;
+        animation-name: slideinright;
+        grid-row: 1;
+        grid-column: 1/3;
+    }
+
+    #MiddleSection{
+        animation-duration: 0.75s;
+        animation-name: slideinleft;
+        grid-row: 2;
+        grid-column: 2/4;
+    }
+
+    #LowerSection{
+        animation-duration: 0.75s;
+        animation-name: slideinright;
+        grid-row: 3;
+        grid-column: 1/3;
+    }
+
+    .MainPageBoxHeadings{
+        background-color: black;
+        border-radius: 25px;
+        padding: 0.5%;
+        margin-bottom: 2%;
+        padding-left: 2%;
+    }
+
+    .MainPageBoxImages{
+        background-color: black;
+        height: 200px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 25px 25px 0 0;
+    }
+
+    .SectionBoxText{
+        background-color: black;
+        padding: 2%;
+        border-radius: 0 0 25px 25px;
+    }
+
+    #UpperSectionImg{
+        background-image: url("../data/img/resized/desktop/pentestimg1.webp");
+    }
+
+    #MiddleSectionImg{
+        background-image: url("../data/img/resized/desktop/pentestimg2.webp");
+    }
+
+    #LowerSectionImg{
+        background-image: url("../data/img/resized/desktop/pentestimg3.webp");
+    }
+
+    #PageFooter p{
+        background-image: linear-gradient(to bottom, #8049e0, black);
+        text-align: center;
+        padding-top: 5%;
+        padding-bottom: 2%;
+    }
+
+
+
+
+
+
+
+
+}
